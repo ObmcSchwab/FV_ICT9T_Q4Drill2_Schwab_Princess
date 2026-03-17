@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Drill 2</title>
+</head>
+<body>
+    <h1>Heat Index Formula</h1>
+
+    <button class="btn btn-info" onclick="teamRank()">Enter</button>
+    <script>
+
+        function teamRank(){
+            var rank = "1st";
+
+            switch(true){
+                case (rank === "≤ 27"):
+                    message = "Comfortable / Cool";
+                    break; 
+                case (rank === "28-32"):
+                    message = "Warm";
+                    break;
+                case (rank === "33-37"):
+                    message = "Hot";
+                    break;
+                case (rank === "28-41"):
+                    message = "Very Hot / Danger";
+                    break;
+                case (rank === "≥ 42"):
+                    message = "Extreme Heat / Danger";
+                    break;
+                    default: 
+                    message = "Rank could not be determined.";
+            }
+                alert(message);
+        }
+
+        HeatIndex = temperature + (0.33 * humidity) - 4; //heat index
+        
+        switch(team){
+            case "red" :
+                alert("Go Red Bulldogs!");
+                break;
+            case "blue" :
+                alert("Go Blue Bears!");
+                break;
+            case "green" :
+                alert("Go Green Hornets!");
+                break;
+            case "yellow" :
+                alert("Go Yellow Tigers!");
+                break;
+            default:
+                alert("Team could not be determined");
+                
+        }
+
+
+    </script>
+    
+</body>
+</html>
