@@ -8,26 +8,26 @@
 <body>
     <h1>Heat Index Formula</h1>
 
-    <button class="btn btn-info" onclick="teamRank()">Enter</button>
+    <button class="btn btn-info" onclick="HeatRange()">Enter</button>
     <script>
 
-        function Heatindex(){
-            var rank = "28-41";
+        function HeatRange(){                           
+            var range = "28-41";
 
             switch(true){
-                case (rank === "≤ 27"):
+                case (range === "≤ 27"):
                     message = "Comfortable / Cool";
                     break; 
-                case (rank === "28-32"):
+                case (range === "28-32"):
                     message = "Warm";
                     break;
-                case (rank === "33-37"):
+                case (range === "33-37"):
                     message = "Hot";
                     break;
-                case (rank === "28-41"):
+                case (range === "28-41"):
                     message = "Very Hot / Danger";
                     break;
-                case (rank === "≥ 42"):
+                case (range === "≥ 42"):
                     message = "Extreme Heat / Danger";
                     break;
                     default: 
